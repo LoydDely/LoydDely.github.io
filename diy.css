@@ -178,11 +178,11 @@ header a:hover {
 color: #FEF6C2;
 }
 
-td, img {
-	
-height: 50%;
-width: 50%;
-	
+.tableimg {
+	img{
+	height: 50%;
+	width: 50%;
+	}
 }
 
 nav li {
