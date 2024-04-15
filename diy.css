@@ -178,7 +178,7 @@ header a:hover {
 color: #FEF6C2;
 }
 
-td img {
+td, img {
 	
 height: 50%;
 width: 50%;
