@@ -178,6 +178,13 @@ header a:hover {
 color: #FEF6C2;
 }
 
+#tableimg {
+	img{
+	height: 50%;
+	width: 50%;
+	}
+}
+
 nav li {
 padding-top: .5em;
 padding-bottom: .5em;
