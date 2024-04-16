@@ -194,6 +194,35 @@ width: 100%;
 border-bottom: 1px solid;
 }
 
+ul.returnpath {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: #eee;
+}
+
+ul.returnpath li {
+  display: inline;
+  font-size: 18px;
+}
+
+
+ul.returnpath li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+ul.returnpath li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+
+ul.returnpath li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+
+
 #mobile {
 display: inline;
 }
