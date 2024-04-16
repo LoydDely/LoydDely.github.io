@@ -249,21 +249,8 @@ nav li {border-bottom: none; display:inline-block; width: 7em; padding: 0.5em; b
 #desktop {display: inline;}
 .details {flex-direction: row;}
 h4 {margin-left: 10%; margin-right: 10%;}
-
-.column{
-float: left;
-width: 33.33%;
-padding: 5px;
 }
 
-.row::after {
-content:"";
-display: table;
-clear: both;
-}
-
-
-}
 
 @media (min-width: 1024px) {
 header{grid-area: header;}
@@ -276,7 +263,18 @@ footer{grid-area:footer;}
               "nav   main"
 	      "footer   footer"
 	      / 200px; }
-	
+
+.column{
+float: left;
+width: 33.33%;
+padding: 5px;
+}
+
+.row::after {
+content:"";
+display: table;
+clear: both;
+}	
 }
 	
 
