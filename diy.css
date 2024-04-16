@@ -241,6 +241,7 @@ border-spacing: 0px;
 display: block;
 margin-left: auto;
 margin-right: auto;
+width: 50%;
 }
 
 td, th {
