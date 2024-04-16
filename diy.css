@@ -69,11 +69,6 @@ background-color: #484b6a;
 padding: 0px 0px 0px 0px;
 }
 
-.details {
-padding-left: 20%;
-padding-right: 20%;
-overflow: auto;
-}
 
 img {
 padding-left: 10px;
@@ -82,22 +77,11 @@ padding-right: 10px;
 
 #homehero {
 height: 300px;
-background-image: url(road.jpg);
+background-image: url(minhero.jpg);
 background-size: 100% 100%;
 background-repeat: no-repeat;
 }
 
-.column{
-float: left;
-width: 33.33%;
-padding: 5px;
-}
-
-.row::after {
-content:"";
-display: table;
-clear: both;
-}
 
 
 #partstore {
@@ -260,20 +244,34 @@ input, textarea {margin-bottom: .5em }
 
 
 @media (min-width: 600px) {
-header {text-align: center;}
+header {text-align: center; padding-left:0 em;}
 h1 {font-size: 3em;}
 nav ul {flex-wrap: nowrap; justify-content: space-around; text-align: center;}
 nav li {border-bottom: none; display:inline-block; width: 7em; padding: 0.5em; border: none;}
 #homehero {height: 50vh; background-image: url(hero.jpg);}
-#flow {flex-direction: row;}
-#mobile {display: none;}
+#flow { display: flex;
+	flex-direction: row; }#mobile {display: none;}
 #desktop {display: inline;}
 .details {flex-direction: row;}
 h4 {margin-left: 10%; margin-right: 10%;}
+
+.column{
+float: left;
+width: 33.33%;
+padding: 5px;
+}
+
+.row::after {
+content:"";
+display: table;
+clear: both;
+}
+
+
 }
 
 @media (min-width: 1024px) {
-header{grid-area: header; background-image: url(coffeelogo.jpg);}
+header{grid-area: header;}
 nav{grid-area:nav;}
 main{grid-area:main;}
 footer{grid-area:footer;}
@@ -283,4 +281,11 @@ footer{grid-area:footer;}
               "nav   main"
 	      "footer   footer"
 	      / 200px; }
+	
 }
+	
+
+nav ul{flex-direction:  column;}
+
+
+
